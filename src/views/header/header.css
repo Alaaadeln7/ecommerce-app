@@ -1,0 +1,160 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  nav {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        margin: 0 10px;
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+  .search__input {
+    background: #eee;
+    padding: 5px;
+    border-radius: 2px;
+    input {
+      background: #eee;
+      border: none;
+      outline: none;
+    }
+    svg {
+      font-size: 20px;
+    }
+  }
+  .btns {
+    display: flex;
+    gap: 10px;
+    a {
+      color: #000;
+      font-size: 20px;
+    }
+    .userName__letter {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      color: var(--white-color);
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  font-size: 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f0ad4e; /* hover color */
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  position: relative;
+  margin-right: auto; /* Pushes the search bar to the right */
+}
+
+.search__input input[type="text"] {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 200px; /* Adjust as needed */
+}
+
+.search__input input[type="text"]:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search__input svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.btns {
+  gap: 10px;
+}
+
+.btns a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btns a:hover {
+  color: #f0ad4e; /* hover color */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search__input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .btns a {
+    text-align: center;
+    width: 100%;
+  }
+}

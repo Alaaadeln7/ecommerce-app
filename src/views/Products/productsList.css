@@ -1,0 +1,30 @@
+.table-responsive img {
+  max-width: 100px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .table-responsive td,
+  .table-responsive th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .table-responsive tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .table-responsive th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+
+  .table-responsive th,
+  .table-responsive td {
+    padding: 0.75rem;
+  }
+}

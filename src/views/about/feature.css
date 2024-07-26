@@ -1,0 +1,7 @@
+.feature {
+  transition: var(--transition);
+  &:hover {
+    color: var(--white-color);
+    background: var(--primary-color);
+  }
+}

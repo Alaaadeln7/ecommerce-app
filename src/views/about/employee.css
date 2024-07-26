@@ -1,0 +1,21 @@
+.lazy-load-image-loaded.employee_image {
+  background: #ddd;
+  display: flex !important;
+  justify-content: center !important;
+  img {
+    width: 60%;
+    height: 300px;
+  }
+}
+.social__media {
+  ul {
+    li {
+      display: inline-block;
+      margin: 5px;
+      a {
+        color: var(--balck-color);
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.product {
+  max-width: 200px;
+  .product__image {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .product__info {
+    padding: 10px 5px;
+    .product__description {
+      line-height: 1.5;
+      font: 15px;
+    }
+    .product__button {
+      width: 100%;
+      margin: 10px 0;
+      border: #000;
+    }
+  }
+}

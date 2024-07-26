@@ -1,0 +1,42 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .submit_btn {
+    font-weight: 600;
+    background: var(--primary-color);
+    border: none;
+    padding: 10px 0;
+    transition: var(--transition);
+
+    &:hover {
+      background: #771616;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+.input_password_container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+#password__input {
+  border: none !important;
+}
+.account__section {
+  padding: 20px;
+}
+
+.input_password_container {
+  position: relative;
+}
+
+.eyes_btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+}

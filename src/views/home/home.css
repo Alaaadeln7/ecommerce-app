@@ -1,0 +1,27 @@
+.home__section {
+  .container {
+    ul {
+      width: fit-content;
+      padding-right: 20px;
+      list-style: none;
+      border-right: 1px solid #ddd;
+      li {
+        margin: 10px 0;
+      }
+      a {
+        color: var(--balck-color);
+        text-decoration: none;
+        transition: var(--transition);
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .landing__page__image {
+      margin-top: 20px;
+      img {
+        max-width: 700px;
+      }
+    }
+  }
+}

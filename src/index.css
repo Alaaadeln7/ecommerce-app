@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #db4444;
+  --balck-color: #000;
+  --white-color: #fff;
+  --transition: all 0.3s ease;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

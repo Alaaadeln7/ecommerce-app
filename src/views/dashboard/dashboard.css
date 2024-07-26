@@ -1,0 +1,49 @@
+.dashboard {
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  padding-top: 60px; /* Adjust for top navbar height */
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  left: -45px;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 250px;
+  }
+  .toggle-btn {
+    left: 10px;
+  }
+}
